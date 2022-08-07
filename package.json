@@ -1,5 +1,5 @@
 {
-  "name": "playerproject",
+  "name": "4Listen-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,10 +16,12 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.4.1",
+    "@types/react-input-mask": "^3.0.1",
     "@types/react-router-dom": "^5.3.3",
     "framer-motion": "^6.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-input-mask": "^2.0.4",
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
