@@ -1,10 +1,21 @@
 import { FC, InputHTMLAttributes } from 'react'
-import { Input, InputGroup, InputLeftAddon } from '@chakra-ui/react'
+import { FormControl, FormLabel, Input } from '@chakra-ui/react'
 
 export const CustomDefaultInput: FC<InputHTMLAttributes<HTMLInputElement>> = ({ ...props }) => {
   return (
-    <InputGroup>
+    <FormControl>
       <Input variant="outline" placeholder={props.placeholder} value={props.value} />
-    </InputGroup>
+    </FormControl>
+  )
+}
+
+export const CustomDefaultInputWithTitle: FC<InputHTMLAttributes<HTMLInputElement>> = ({
+  ...props
+}) => {
+  return (
+    <FormControl>
+      <FormLabel>{props.title}</FormLabel>
+      <Input variant="outline" placeholder={props.placeholder} value={props.value} />
+    </FormControl>
   )
 }
